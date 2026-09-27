@@ -209,7 +209,7 @@ with tab1:
 with tab2:
     st.subheader("Peta Risiko Sepanjang Siklus Hidup Proyek WtE")
     st.dataframe(
-        risk_df.style.applymap(
+        risk_df.style.map(
             lambda v: "background-color:#DCFCE7" if v == "Aktif" else "background-color:#FEF9C3",
             subset=["Status Cakupan"],
         ),
